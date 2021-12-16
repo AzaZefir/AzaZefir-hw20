@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map</title>
+    <style>
+        .body {
+            margin: 0;
+            padding: 0;
+            text-align: 4px;
+        }
+
+        a {
+            width: 20px;
+            height: 20px;
+            text-align: bottom;
+            color: black;
+        }
+
+        .trip {
+            position: relative;
+        }
+
+        .trip img {
+            width: 100%;
+            height: 50%;
+        }
+
+        .travel {
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            animation-name: point;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            animation-play-state: running;
+            animation-fill-mode: forwards;
+        }
+
+        .travel:hover {
+            animation-play-state: paused;
+        }
+
+        .map-one {
+            left: 80%;
+            top: 40%;
+        }
+
+        .map-two {
+            left: 55%;
+            top: 55%;
+        }
+
+        .map-three {
+            left: 24%;
+            top: 44%;
+        }
+
+        .map-four {
+            left: 69%;
+            top: 48%;
+        }
+
+        .map-five {
+            left: 85%;
+            top: 69%;
+        }
+
+        .map-six {
+            left: 30%;
+            top: 64%;
+        }
+
+        @keyframes point {
+            0% {
+                width: 10px;
+                height: 10px;
+            }
+
+            100% {
+                width: 10px;
+                height: 10px;
+                opacity: 0.2;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="trip">
+        <img src="..//hw20/img/world-map.jpg" alt="image">
+        <a href="#" class="travel map-one"
+            title="Авиасейлс — крупнейший поисковик авиабилетов в России. Мы сравниваем все доступные варианты перелётов по вашему запросу, а потом направляем вас для покупки на официальные сайты авиакомпаний и агентств.">China</a>
+        <a href="#" class="travel map-two"
+            title="Стоимость авиабилета, которую вы видите на Авиасейлс — финальная. Мы убрали все скрытые услуги и галочки.">Africa</a>
+        <a href="#" class="travel map-three"
+            title="Мы не продаём авиабилеты, а помогаем найти самые дешёвые. Бесплатно.">USA</a>
+        <a href="#" class="travel map-four"
+            title="Аэрофлот удостоен премии «Время инноваций 2021» за цифровой проект «Система контроля операционных ограничений»">Europe</a>
+        <a href="#" class="travel map-five"
+            title="Аэрофлот совместно с ключевыми участниками отрасли инициировал создание биотопливного альянса">Australia</a>
+        <a href="#" class="travel map-six"
+            title="Аэрофлот получил премию Digital Leaders Awards в двух номинациях">South America</a>
+    </div>
+</body>
+
+</html>
